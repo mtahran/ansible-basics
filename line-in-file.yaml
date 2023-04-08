@@ -1,0 +1,13 @@
+---
+  - name: add lines to file
+    hosts: localhost
+    tasks:
+      - name: add 1.lines
+        lineinfile:
+          path: /tmp/file.txt
+          line: This is line 1
+      - name: add 2.lines
+        lineinfile:
+          path: /tmp/file.txt
+          insertafter: This is line 1
+          line: This is line 2
