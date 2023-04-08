@@ -3,11 +3,9 @@
     hosts: localhost
     tasks:
       - name: add 1.lines
-        lineinfile:
+        blockinfile:
           path: /tmp/file.txt
-          line: This is line 1
-      - name: add 2.lines
-        lineinfile:
-          path: /tmp/file.txt
-          insertafter: This is line 1
-          line: This is line 2
+          block: |
+            This is line 1
+            This is line 2
+     
