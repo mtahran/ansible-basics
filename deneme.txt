@@ -1,7 +1,0 @@
-This is line 1.
-This is completely different.
-Day=sunday
-This is one more line.
-month=april
-This is the last line.
-This is very last line.
